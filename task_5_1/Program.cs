@@ -15,7 +15,7 @@ int Prompt(string message)
     return num_result;
 }
 
-int[] GetBinaryArray(int len, int min_pos, int max_pos)
+int[] GetArray(int len, int min_pos, int max_pos)
 {
     int[] arr_result = new int[len];
     for (int j = 0; j < len; j++)
@@ -39,6 +39,6 @@ int SumEven(int[] array)
 int len = Prompt("Введите размер массива: ");
 int min_pos = Prompt("Введите минимальное значение массива: ");
 int max_pos = Prompt("Введите максимальное значение массива: ");
-int[] table = GetBinaryArray(len, min_pos, max_pos);
+int[] table = GetArray(len, min_pos, max_pos);
 
 Console.WriteLine($"[{string.Join(", ", table)}] -> {SumEven(table)}");
