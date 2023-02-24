@@ -40,6 +40,6 @@ int len = Prompt("Введите размер массива: ");
 int min_pos = Prompt("Введите минимальное значение массива: ");
 int max_pos = Prompt("Введите максимальное значение массива: ");
 int[] table = GetBinaryArray(len, min_pos, max_pos);
-int sum_even = SumEven(table);
+//int sum_even = SumEven(table);
 
-Console.WriteLine($"[{string.Join(", ", table)}] -> {sum_even}");
+Console.WriteLine($"[{string.Join(", ", table)}] -> {SumEven(table)}");
